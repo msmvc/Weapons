@@ -11,7 +11,7 @@ namespace AttendanceMachineSimulator
         {
             _client = new RestClient(baseUrl);
         }
-
+        //http://www.mzdbl.cn/yinyue/mx/index.html
         public async Task<RestResponse> GetAsync(string endpoint)
         {
             var request = new RestRequest(endpoint, Method.Get);
